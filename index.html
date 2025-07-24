@@ -37,11 +37,54 @@
       src="https://www.youtube.com/embed/6F9vF1r0h5g" 
       title="YouTube video player" frameborder="0" 
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen></iframe>
+     allowfullscreen></iframe>
+    <h3> Sorry if vids unavaiable. currently making one! love yall</h3>
   </section>
   <footer>
+<section id="contact">
+    <h3>📧 Contact</h3>
+    <p>Questions? Message me via Discord!  Dustyy.chem </a></p>
+  <section id="cool">
+    <h3>🧪 Chemistry Rizz Generator</h3>
+    <button onclick="generateRizz()">Generate</button>
+    <p id="rizz-output">Click the button for a smooth science line 😏</p>
+  </section>
 
-    <p>Made with ❤️ by Dustyy • 2025</p>
-  </footer>
+  <script>
+    const lines = [
+      "Are you made of copper and tellurium? Because you're Cu-Te.",
+      "You must be a catalyst, because you speed up my heart reaction.",
+      "Are we in a redox reaction? Because I'm losing electrons to you.",
+      "You're like an exothermic reaction—you light up my world.",
+      "Are you NaOH? Because you're giving me strong base energy."
+    ];
+    function generateRizz() {
+      const random = lines[Math.floor(Math.random() * lines.length)];
+      document.getElementById('rizz-output').innerText = random;
+    }
+  </script>
 </body>
 </html>
+ <section id="facts">
+  <h2>Fun Chemistry Facts</h2>
+  <ul>
+    <li>💥 Water expands when it freezes—most substances shrink!</li>
+    <li>☁️ Clouds are mostly tiny water droplets, not vapor.</li>
+    <li>🔥 You can boil and freeze water at the same time (triple point).</li>
+    <li>🧬 DNA is a polymer, like plastic!</li>
+    <li>🧂 Table salt is made from explosive sodium and poisonous chlorine.</li>
+  </ul>
+</section>
+ <section id="facts">
+  <h2>Fun Chemistry Facts</h2>
+  <ul>
+    <li>💥 Water expands when it freezes—most substances shrink!</li>
+    <li>☁️ Clouds are mostly tiny water droplets, not vapor.</li>
+    <li>🔥 You can boil and freeze water at the same time (triple point).</li>
+    <li>🧬 DNA is a polymer, like plastic!</li>
+    <li>🧂 Table salt is made from explosive sodium and poisonous chlorine.</li>
+  </ul>
+</section>
+  <footer>
+    <p>Made with ❤️ by Dustyy • 2025</p>
+  </footer>
