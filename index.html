@@ -13,6 +13,10 @@
       <a href="#topics">Topics</a>
       <a href="#video">Video</a>
       <a href="#contact">Contact</a>
+      <a href="#booking">Book Now!</a>
+      <a href="#cool">Chemistry Rizz Generator</a>
+      <a href="#quiz">Easy Question</a>
+      <a href="#facts"> Fun Facts</a>
     </nav>
   </header>
 
@@ -79,6 +83,25 @@
   </script>
 </body>
 </html>
+  <section id="quiz">
+  <h2>Quick Chemistry Quiz</h2>
+  <p>What is the chemical symbol for Sodium?</p>
+  <button onclick="checkAnswer('Na')">Na</button>
+  <button onclick="checkAnswer('S')">S</button>
+  <p id="quiz-result"></p>
+
+  <script>
+    function checkAnswer(answer) {
+      const result = document.getElementById('quiz-result');
+      if (answer === 'Na') {
+        result.innerText = "✅ Correct! Sodium = Na";
+      } else {
+        result.innerText = "❌ Nope! Try again.";
+      }
+    }
+  </script>
+</section>
+
  <section id="facts">
   <h2>Fun Chemistry Facts</h2>
   <ul>
@@ -89,16 +112,5 @@
     <li>🧂 Table salt is made from explosive sodium and poisonous chlorine.</li>
   </ul>
 </section>
- <section id="facts">
-  <h2>Fun Chemistry Facts</h2>
-  <ul>
-    <li>💥 Water expands when it freezes—most substances shrink!</li>
-    <li>☁️ Clouds are mostly tiny water droplets, not vapor.</li>
-    <li>🔥 You can boil and freeze water at the same time (triple point).</li>
-    <li>🧬 DNA is a polymer, like plastic!</li>
-    <li>🧂 Table salt is made from explosive sodium and poisonous chlorine.</li>
-  </ul>
-</section>
-  <footer>
-    <p>Made with ❤️ by Dustyy • 2025</p>
+
   </footer>
